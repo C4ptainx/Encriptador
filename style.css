@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #283747;
+}
+.container {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 75vh;
+    width: 200vh;
+    
+}
+.header{
+    display: flex;
+    padding: 20px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input, button {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 50%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button {
+    background-color: #0b5fb8;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #152E51;
+}
+textarea {
+    resize: none;
+    height: 100px;
+}
+.codificar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 22px;
+    width: 123vh;
+    height: 75vh;
+    flex-direction: column;
+}
+#outputText{
+    height: 70vh;
+    width: 35vh;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px;
+    outline: 0 none;
+    background-color: transparent;
+    color: #fff;
+}
+#inputText{
+    height: 70vh;
+    width: 120vh;
+    border: none;
+    border-radius: 25px;
+    margin-right: 15px;
+    font-size: 15px;
+    padding: 10px;
+    outline: 0 none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #fff;
+}
+.decodificar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+.button-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+::placeholder{
+    font-size: 18px;
+}
+/* Estilos para pantallas pequeñas (768px o menos) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: auto;
+        padding: 20px;
+    }
+
+    input, button {
+        width: 65%;
+        max-width: 16vh;
+    }
+
+    .codificar, .decodificar {
+        width: 43vh;
+        height: 36vh;
+    }
+
+    /* Ajuste del tamaño de los textarea */
+    #outputText {
+        width: 80%; /* Cambiar el valor según sea necesario */
+    }
+
+    #inputText {
+        width: 100%; /* Cambiar el valor según sea necesario */
+    }
+}
